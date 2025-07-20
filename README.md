@@ -86,7 +86,7 @@ Metric	            IsolationForest	      Autoencoder
 Precision	               000.63	             0.97
 Recall	                  001.00	             0.97
 F1-Score	                000.77	             0.97
-ROC-AUC	                 0.9920	              0.9968
+ROC-AUC	                 0.9920	                 0.9968
 
 
  Evaluation on corrected.csv (test data)
