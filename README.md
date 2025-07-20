@@ -76,3 +76,47 @@ pip install pandas numpy scikit-learn tensorflow matplotlib seaborn
 StandardScaler for Isolation Forest
 MinMaxScaler for Autoencoder
 
+
+
+📈 Evaluation Results
+
+✅ Evaluation on kddcup.data_10_percent_corrected.csv
+
+Metric	            Isolation Forest	      Autoencoder
+Precision	                 0.63	               0.97
+Recall	                   1.00	               0.97
+F1-Score	                 0.77	               0.97
+ROC-AUC	                   0.9920	             0.9968
+✅ Evaluation on corrected.csv (test data)
+Metric	             Isolation Forest	      Autoencoder
+Precision	                 0.74	               0.95
+Recall	                   0.98              	 0.94
+F1-Score	                 0.84	               0.95
+ROC-AUC	                   0.9837	             0.9882
+
+
+🔮 Predictions on Unlabeled Data
+
+The file kddcup_unlabeled_with_predictions.csv includes:
+
+predicted_anomaly_if: Prediction by Isolation Forest (0=Normal, 1=Anomaly)
+predicted_anomaly_ae: Prediction by Autoencoder
+
+
+
+📊 Visualizations
+
+Plots include:
+
+autoencoder_roc_curve_corrected.png
+isolation_forest_roc_curve_corrected.png
+autoencoder_loss_plot.png
+autoencoder_mse_distribution.png
+These help interpret model performance and threshold tuning.
+
+
+💡 Key Insights
+
+Autoencoder achieved higher precision and F1-score, reducing false positives.
+Isolation Forest, while faster, had more false positives but was still effective.
+Both models generalize well to unseen attacks in corrected.csv.
