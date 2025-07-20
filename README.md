@@ -6,13 +6,13 @@ This project focuses on detecting unusual patterns or anomalies in network traff
 
 ---
 
-## 🎯 Project Goal
+##  Project Goal
 
 To build and evaluate **unsupervised anomaly detection models** that learn only from normal traffic, simulating real-world zero-day attack scenarios where labeled attack data is unavailable during training.
 
 ---
 
-## 🤖 Techniques Used
+##  Techniques Used
 
 ### 1. **Isolation Forest**
 - A tree-based ensemble method that isolates anomalies using random partitions.
@@ -24,7 +24,7 @@ To build and evaluate **unsupervised anomaly detection models** that learn only 
 
 ---
 
-## 📁 Dataset Information
+##  Dataset Information
 
 - **Training Data**: `kddcup.data_10_percent_corrected.csv` (used to extract *normal* connections)
 - **Evaluation Data**: `corrected.csv` (includes unseen attack types)
@@ -34,7 +34,7 @@ The dataset includes 41 features + 1 label. Features cover connection stats, pro
 
 ---
 
-## 🛠️ Project Structure
+##  Project Structure
 
 ```bash
 kddcup-anomaly-detection/
@@ -69,10 +69,10 @@ pip install pandas numpy scikit-learn tensorflow matplotlib seaborn
 
 ⚙️ Data Preprocessing Highlights
 
-🔁 Duplicate Removal: Reduces overfitting
-🎯 Binary Labeling: All attack types → 1, normal → 0
-🔠 Categorical Encoding: One-hot encoding for protocol_type, service, flag
-📏 Scaling:
+ Duplicate Removal: Reduces overfitting
+ Binary Labeling: All attack types → 1, normal → 0
+ Categorical Encoding: One-hot encoding for protocol_type, service, flag
+ Scaling:
 StandardScaler for Isolation Forest
 MinMaxScaler for Autoencoder
 
@@ -80,7 +80,7 @@ MinMaxScaler for Autoencoder
 
 📈 Evaluation Results
 
-✅ Evaluation on kddcup.data_10_percent_corrected.csv
+ Evaluation on kddcup.data_10_percent_corrected.csv
 
 Metric	            IsolationForest	      Autoencoder
 Precision	                000.63	             000.97
@@ -89,7 +89,7 @@ F1-Score	                000.77	             000.97
 ROC-AUC	                  0.9920	             0.9968
 
 
-✅ Evaluation on corrected.csv (test data)
+ Evaluation on corrected.csv (test data)
 Metric	             IsolationForest	      Autoencoder
 Precision	                 0.74	                 000.95
 Recall	                   0.98              	   000.94
