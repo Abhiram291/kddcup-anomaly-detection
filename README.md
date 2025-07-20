@@ -51,3 +51,18 @@ kddcup-anomaly-detection/
 │   ├── autoencoder_loss_plot.png
 │   ├── autoencoder_mse_distribution.png
 │   └── kddcup_unlabeled_with_predictions.csv
+
+
+
+⚙️ Installation & Dependencies
+
+# Step 1: Create a virtual environment
+python -m venv venv
+source venv/bin/activate   # or venv\Scripts\activate on Windows
+
+# Step 2: Install dependencies
+pip install -r requirements.txt
+Or manually install:
+
+pip install pandas numpy scikit-learn tensorflow matplotlib seaborn
+
