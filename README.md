@@ -66,3 +66,13 @@ Or manually install:
 
 pip install pandas numpy scikit-learn tensorflow matplotlib seaborn
 
+
+⚙️ Data Preprocessing Highlights
+
+🔁 Duplicate Removal: Reduces overfitting
+🎯 Binary Labeling: All attack types → 1, normal → 0
+🔠 Categorical Encoding: One-hot encoding for protocol_type, service, flag
+📏 Scaling:
+StandardScaler for Isolation Forest
+MinMaxScaler for Autoencoder
+
