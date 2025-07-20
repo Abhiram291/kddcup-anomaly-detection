@@ -83,7 +83,7 @@ MinMaxScaler for Autoencoder
  Evaluation on kddcup.data_10_percent_corrected.csv
 
 Metric	            IsolationForest	      Autoencoder
-Precision	                000.63	             000.97
+Precision	               000.63	             000.97
 Recall	                  001.00	             000.97
 F1-Score	                000.77	             000.97
 ROC-AUC	                  0.9920	             0.9968
