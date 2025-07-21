@@ -98,7 +98,7 @@ F1-Score	                 0.84	                           0.95
 ROC-AUC	                  0.9837	                       0.9882
 
 
-🔮 Predictions on Unlabeled Data
+ Predictions on Unlabeled Data
 
 The file kddcup_unlabeled_with_predictions.csv includes:
 
@@ -118,7 +118,7 @@ autoencoder_mse_distribution.png
 These help interpret model performance and threshold tuning.
 
 
-💡 Key Insights
+ Key Insights
 
 Autoencoder achieved higher precision and F1-score, reducing false positives.
 Isolation Forest, while faster, had more false positives but was still effective.
