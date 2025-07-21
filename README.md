@@ -27,7 +27,7 @@ To build and evaluate **unsupervised anomaly detection models** that learn only 
 ##  Dataset Information
 
 - **Training Data**: `kddcup.data_10_percent_corrected.csv` (used to extract *normal* connections)
-- **Evaluation Data**: `corrected.csv` (includes unseen attack types)
+- **Evaluation Data**: `corrected.csv`
 - **Unlabeled Prediction Data**: `kddcup.testdata.unlabeled_10_percent.csv`
 
 The dataset includes 41 features + 1 label. Features cover connection stats, protocol types, service, flags, and traffic characteristics.
